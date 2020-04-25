@@ -4,6 +4,9 @@
                 <div class="col-md-8">
                     <div v-if="!inProcess" class="my-quiz-wrap-settings">
                         <div class="row mt-5 mb-4">
+                            <div class="col-md-12 text-center">
+                                <img src="https://vcode.md/wp-content/themes/vcode/quizVue/img/404.jpg" style="width: 100%;" alt="">
+                            </div>
                             <div class="col-md-2 mb-4">
                                 <h6>Limba/Язык</h6>
                                 <div class="form-check">
@@ -84,6 +87,10 @@
                         </div>
                     </div>
                     <div v-if="inProcess" class="my-quiz-wrap" v-bind:class="{myBlur: !inProcess}">
+                        <!--StopProcess-->
+                        <button type="button" class="btn btn-outline-warning">Warning</button>
+                        <!--StopProcess-->
+
                         <!--Timmer-->
                         <div v-if="useCountDownTimer" class="text-right">
                             <span>{{timeLeft}}</span>
